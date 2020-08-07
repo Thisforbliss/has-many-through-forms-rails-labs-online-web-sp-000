@@ -9,7 +9,7 @@ describe 'users', type: 'feature' do
     @post.save
   end
 
-  describe 'show page' do
+  # describe 'show page' do
 
   #   it 'should link to all of the posts the user commented on' do
   #     visit user_path(@user)
