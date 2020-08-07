@@ -18,12 +18,12 @@ describe 'Posts', type: 'feature' do
     #   expect(page).to have_content('Feeling Awesome')
     # end
 
-    it 'can create a post with a previously created category' do
-      check('Cool')
-      click_button('Create Post')
-      @category = Post.last.categories.first.name
-      expect(@category).to eq('Cool')
-    end
+    # it 'can create a post with a previously created category' do
+    #   check('Cool')
+    #   click_button('Create Post')
+    #   @category = Post.last.categories.first.name
+    #   expect(@category).to eq('Cool')
+    # end
 
     it 'can create a post with a brand new category' do
       fill_in('post_categories_attributes_0_name', :with => 'Funny')
